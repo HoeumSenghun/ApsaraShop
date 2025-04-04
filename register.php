@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Checkout</title>
+    <title>Register</title>
     <link rel="stylesheet" href="assets/css/styles.css">
 </head>
 <body>
@@ -21,24 +21,22 @@
         </div>
     </header>
 
-    <section class="checkout">
+    <section class="auth-form">
         <div class="container">
-            <h2>Checkout</h2>
-            <form method="POST" action="includes/process_order.php">
-                <label for="name">Full Name:</label>
-                <input type="text" id="name" name="name" required>
+            <h2>Register</h2>
+            <form method="POST" action="includes/register.php">
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" required>
 
-                <label for="address">Shipping Address:</label>
-                <textarea id="address" name="address" required></textarea>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
 
-                <label for="payment">Payment Method:</label>
-                <select id="payment" name="payment" required>
-                    <option value="credit_card">Credit Card</option>
-                    <option value="paypal">PayPal</option>
-                </select>
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
 
-                <button type="submit" class="btn">Place Order</button>
+                <button type="submit" class="btn">Register</button>
             </form>
+            <p>Already have an account? <a href="login.php">Login here</a>.</p>
         </div>
     </section>
 
